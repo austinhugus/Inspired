@@ -1,0 +1,7 @@
+#todo-error{
+  color: red;
+  font-size: 2em;
+}
+.bg-image{
+  background-image: url(bcw-sandbox.herokuapp.com/api/images)
+}
