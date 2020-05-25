@@ -6,45 +6,73 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<script src='https://kit.fontawesome.com/d81e10aab1.js' crossorigin='anonymous'></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<title>Inspire</title>
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body id="bg-image">
-	<div id="weather"></div>
-
-	<div id="quote">
-		The Quote
-	</div>
-	<div id="time"></div>
-
-
-	<div id="todo-error"></div>
-	<form onsubmit=""></form>
-	<div class="row d-flex align-content-end">
-		<div class="col-2 offset-10 text-light text-shadow">
-			<p class="">To Do List</p>
-
-
-			<div id="todos"></div>
-			<form onsubmit="app.todoController.addTodo(event)">
-				<div class="form-group mt-1">
-					<input type="text" required class="form-control" id="description" placeholder="New Item">
-				</div>
-				<button type="submit" class="btn btn-outline-success">Add</button>
-			</form>
+	<header class="container-fluid">
+		<div class="row">
+			<div class="col-12 d-flex justify-content-end" id="weather">
+			</div>
 
 		</div>
-	</div>
-	A Todo List
-	<div id="todo-error"></div>
-	<form onsubmit=""></form>
-	<div id="todos"></div>
-	</>
+	</header>
 
+	<main class="container-fluid">
+
+
+		<div class="row">
+			<div class="col d-flex justify-content-end align-items-center flex-column">
+				<div>
+					<h2 id="date"></h2>
+				</div>
+				<div>
+					<h1 id="time"></h1>
+				</div>
+			</div>
+		</div>
+		<div class="row todo">
+			<div class="col">
+				<div id="todo-error"></div>
+				<form onsubmit=""></form>
+
+
+
+
+				<div id="todos"></div>
+				<form onsubmit="app.todoController.addTodo(event)">
+					<p class="">What Are We Doing Today?</p>
+					<div class="form-group mt-1">
+						<input type="text" required class="form-control" id="description" placeholder="New Item">
+					</div>
+					<button type="submit" class="btn btn-outline-primary">Add</button>
+				</form>
+				<div id="todo-error"></div>
+				<form onsubmit=""></form>
+				<div id="todos"></div>
+			</div>
+		</div>
+
+
+
+
+	</main>
+
+
+	<!-- <div id="weather"></div> -->
+	<footer class="container-fluid">
+		<div class="row text-center d-flex justify-content-center">
+			<div id="quote">
+				<p> The Quote</p>
+			</div>
+
+		</div>
+	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
 	<script type="module" src="app/main.js"></script>
 </body>
 
 </html>
-<html>

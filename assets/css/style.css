@@ -1,7 +1,18 @@
-#todo-error{
-  color: red;
-  font-size: 2em;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-.bg-image{
-  background-image: url(bcw-sandbox.herokuapp.com/api/images)
+
+main {
+    flex-grow: 1;
+}
+      #todo-error{
+      color: red;
+        font-size: 2em;
+      }
+.todo {
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
 }

@@ -20,6 +20,7 @@ export default class Weather {
     
      <div>
     <h4>${this.city}</h4>
+   <i class="fas fa-sun fa-2x"></i>
      <h4 onclick="app.weatherController.Cel()">${this.fahrenheit} F</h4>
 		</div>
     
@@ -30,6 +31,7 @@ export default class Weather {
     return `
     <div>
     <h4>${this.city}</h4>
+   <i class="fas fa-sun fa-2x"></i>
     <h4 onclick="app.weatherController.Far()">${this.celcius} C</h4>
 		</div>
     `

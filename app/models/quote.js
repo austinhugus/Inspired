@@ -11,7 +11,7 @@ export default class Quote {
         return `
 <div >
               <h5>${this.quote}</h5>
-              <p>${this.author}</p>
+              <p id="hover">${this.author}</p>
 </div>
     `
     }
