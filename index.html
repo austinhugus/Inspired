@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src='https://kit.fontawesome.com/d81e10aab1.js' crossorigin='anonymous'></script>
 	<title>Inspire</title>
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -17,12 +18,29 @@
 	</div>
 	<div id="time"></div>
 
-	<div>
-		A Todo List
-		<div id="todo-error"></div>
-		<form onsubmit=""></form>
-		<div id="todos"></div>
+
+	<div id="todo-error"></div>
+	<form onsubmit=""></form>
+	<div class="row d-flex align-content-end">
+		<div class="col-2 offset-10 text-light text-shadow">
+			<p class="">To Do List</p>
+
+
+			<div id="todos"></div>
+			<form onsubmit="app.todoController.addTodo(event)">
+				<div class="form-group mt-1">
+					<input type="text" required class="form-control" id="description" placeholder="New Item">
+				</div>
+				<button type="submit" class="btn btn-outline-success">Add</button>
+			</form>
+
+		</div>
 	</div>
+	A Todo List
+	<div id="todo-error"></div>
+	<form onsubmit=""></form>
+	<div id="todos"></div>
+	</>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
 	<script type="module" src="app/main.js"></script>

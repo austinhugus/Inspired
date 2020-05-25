@@ -14,7 +14,7 @@ let _state = {
  */
 let _listeners = {
   weather: [],
-  todo: [],
+  todos: [],
   quote: [],
   image: []
 
