@@ -9,10 +9,13 @@ export default class Quote {
 
     get Template() {
         return `
-<div >
+            <div class="hover">
               <h5>${this.quote}</h5>
-              <p id="hover">${this.author}</p>
-</div>
+            </div>
+
+              <div class="hide">
+                 <p>${this.author}</p>
+              </div>
     `
     }
 }

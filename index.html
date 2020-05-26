@@ -13,9 +13,10 @@
 </head>
 
 <body id="bg-image">
+
 	<header class="container-fluid">
 		<div class="row">
-			<div class="col-12 d-flex justify-content-end" id="weather">
+			<div class="col-12 d-flex justify-content-end px-5 pt-3 text-white" id="weather">
 			</div>
 
 		</div>
@@ -27,15 +28,15 @@
 		<div class="row">
 			<div class="col d-flex justify-content-end align-items-center flex-column">
 				<div>
-					<h2 id="date"></h2>
+					<h2 id="date" class="text-white"></h2>
 				</div>
 				<div>
-					<h1 id="time"></h1>
+					<h1 id="time" class="text-white"></h1>
 				</div>
 			</div>
 		</div>
 		<div class="row todo">
-			<div class="col">
+			<div class="col text-white">
 				<div id="todo-error"></div>
 				<form onsubmit=""></form>
 
@@ -48,7 +49,7 @@
 					<div class="form-group mt-1">
 						<input type="text" required class="form-control" id="description" placeholder="New Item">
 					</div>
-					<button type="submit" class="btn btn-outline-primary">Add</button>
+					<button type="submit" class="btn btn-secondary">Add</button>
 				</form>
 				<div id="todo-error"></div>
 				<form onsubmit=""></form>
@@ -64,8 +65,8 @@
 
 	<!-- <div id="weather"></div> -->
 	<footer class="container-fluid">
-		<div class="row text-center d-flex justify-content-center">
-			<div id="quote">
+		<div class="row text-center d-flex justify-content-center text-white">
+			<div id="quote" class="pb-3">
 				<p> The Quote</p>
 			</div>
 

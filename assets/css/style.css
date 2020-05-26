@@ -16,3 +16,16 @@ main {
     bottom: 15%;
     right: 5%;
 }
+.hide{
+  display: none;
+}
+.hover:hover + .hide{
+display: block;
+}
+.bg-image {
+width: 100vh;
+height: 100vh;
+}
+.grey{
+  color: grey;
+}

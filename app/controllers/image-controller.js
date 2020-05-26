@@ -3,7 +3,8 @@ import store from "../store.js";
 import imageService from "../services/image-service.js";
 
 function _drawImg() {
-    let img = store.State.image.url
+
+    let img = store.State.image
     document.getElementById("bg-image").style.backgroundImage = `url('${img}')`
 }
 

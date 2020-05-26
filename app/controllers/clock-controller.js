@@ -1,7 +1,7 @@
 function _drawClock() {
     var today = new Date();
     var date = (today.getMonth() + 1) + '-' + today.getDate() + '-' + today.getFullYear();
-    var time = today.getHours() + ":" + today.getMinutes();
+    var time = today.getHours() + ":" + today.getMinutes()
     // var dateTime = date + ' ' + time;
     document.getElementById("date").innerText = date
     document.getElementById("time").innerText = time
